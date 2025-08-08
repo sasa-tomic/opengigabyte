@@ -37,6 +37,13 @@ sudo apt update
 sudo apt install opengigabyte-driver-dkms
 ```
 
+Or to manully build and install the package:
+```bash
+sudo apt install dkms build-essential dh-make dh-dkms
+./scripts/build_debs.sh
+sudo dpkg -i ./dist/opengigabyte-driver-dkms_0.0.2-0_all.deb
+```
+
 ### Arch Linux :
 Install [opengigabyte-meta]() from the AUR using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers#Pacman_wrappers). For example:
 ```
