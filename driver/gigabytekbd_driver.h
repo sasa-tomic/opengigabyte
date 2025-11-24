@@ -16,6 +16,12 @@
 #define USB_VENDOR_ID_GIGABYTE_AORUS16X 0x0414
 #define USB_DEVICE_ID_GIGABYTE_AORUS16X 0x8005
 
+#define USB_VENDOR_ID_GIGABYTE_AORUS15_9KF_1 0x0414
+#define USB_DEVICE_ID_GIGABYTE_AORUS15_9KF_1 0x7a43
+
+#define USB_VENDOR_ID_GIGABYTE_AORUS15_9KF_2 0x0414
+#define USB_DEVICE_ID_GIGABYTE_AORUS15_9KF_2 0x7a44
+
 
 // /sys/class/backlight/intel_backlight
 #define GIGABYTE_KBD_BACKLIGHT_DEVICE_NAME "intel_backlight" 
@@ -29,7 +35,8 @@ struct gigabyte_kbd_touchpad_device_identifier {
 // touchpad device is in /sys/bus/i2c/devices/i2c-{hid}:{instance_no}
 const struct gigabyte_kbd_touchpad_device_identifier gigabyte_kbd_touchpad_device_identifiers[] = {
     { "PNP0C50", "TPD0", 1 }, // 15P (and probably more)
-    { "ELAN0A02", "TPD0", 0 } // 17X (and probably more)
+    { "ELAN0A02", "TPD0", 0 }, // 17X (and probably more)
+    { "ELAN0A03", "TPD0", 1 }  // 15 9KF
 };
 
 #endif
